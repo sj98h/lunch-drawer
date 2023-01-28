@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>점심 추첨</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <script src="/js/main.js" defer></script>
+    <!-- tagify -->
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css"
+      rel="stylesheet"
+      type="text/css" />
+  </head>
+  <body>
+    <main class="mw768">
+      <!-- 스냅 페이지 1 -->
+      <section class="snap">
+        <!-- 타이틀 -->
+        <h2 class="tit">
+          <span class="bold">점심</span> <br /><span>뭐 먹지?</span>
+        </h2>
+        <span class="scroll_down">Scroll down</span>
+
+        <!-- 사람들 -->
+        <div class="people_wrap">
+          <img src="/image/girl1.png" alt="" class="girl1" id="fix" />
+          <img src="/image/man.png" alt="" class="man" />
+          <img src="/image/girl2.png" alt="" class="girl2" />
+        </div>
+      </section>
+
+      <!-- 스냅 페이지 2 -->
+      <section class="snap sec-2" style="display: none">
+        <input
+          class="tagify--outside"
+          placeholder="음식점을 입력하세요"
+          value="일번지, 공릉옥, 심원, 국수잔치, 용경이네, 씬머이" />
+
+        <button class="pick_btn" onclick="pick()">추첨</button>
+      </section>
+    </main>
+  </body>
+</html>
