@@ -13,9 +13,11 @@
  * @description 애니메이션 종료 후 두 번째 section 생성
  */
 setTimeout(function () {
-  let secondSec = document.querySelector(".sec-2");
+  let secondSec = document.querySelectorAll("section:not(.sec-1)");
 
-  secondSec.style.display = "block";
+  secondSec.forEach((sectionIdx) => {
+    sectionIdx.style.display = "block";
+  });
 }, 3000);
 
 /**

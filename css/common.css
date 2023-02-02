@@ -65,6 +65,11 @@ section.snap {
   position: fixed;
   bottom: -5%;
   z-index: 9;
+  transition: bottom 1s;
+  -webkit-transition: bottom 1s;
+  -moz-transition: bottom 1s;
+  -ms-transition: bottom 1s;
+  -o-transition: bottom 1s;
 }
 .girl1 {
   left: 0;
@@ -131,4 +136,11 @@ section.snap {
 .pick_btn:hover {
   color: #fff;
   background-color: crimson;
+}
+
+/* 모바일 키보드 반응형 */
+@media (max-height: 800px) {
+  .people_wrap {
+    bottom: -20%;
+  }
 }
